@@ -7,6 +7,8 @@
   <title>Surf school</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,regular&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="./css/style.css" />
 
 </head>
@@ -132,9 +134,9 @@
       </h2>
       <div class="expertise__items">
         <div class="expertise__item">
-          <div class="expertise__item-sea">
+          <div class="expertise__item--sea">
             <img src="./images/sea.svg" alt="sea">
-            <h4 class="expertise__item-title">
+            <h4 class="expertise__item-title title__sea">
               ПРОЖИВАНИЕ
             </h4>
           </div>
@@ -144,27 +146,27 @@
           </p>
         </div>
         <div class="expertise__item">
-          <div class="expertise__item-airplan">
-            <img src="./images/airplane.svg" alt="airplan">
-            <h4 class="expertise__item-title">
+          <div class="expertise__item--airplan">
+            <img src="./images/airplane.svg" alt="airplane">
+            <h4 class="expertise__item-title title__airplan">
               ПЕРЕЛЕТ И
               СТРАХОВКУ
             </h4>
           </div>
           <p class="expertise__item-text">
-            Все участники программы застрахованы страховой компанией Allianz.
+            Все участники программы застрахованы страховой компанией Allianz. <br>
             Перелет из Тенерифе до острова Лансароте и обратно входит в стоимость программы
           </p>
         </div>
         <div class="expertise__item">
-          <div class="expertise__item-wave">
+          <div class="expertise__item--wave">
             <img src="./images/wave.svg" alt="wave">
-            <h4 class="expertise__item-title">
+            <h4 class="expertise__item-title title__wave">
               ОБУЧЕНИЕ И
               ЭКИПИРОВКУ
             </h4>
           </div>
-          <p class="expertise__item-text">
+          <p class="expertise__item-text ">
             Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
             Тренировочный процесс начинается с определения вашего уровня катания
           </p>
@@ -180,10 +182,10 @@
           <div class="expertise__info-item">
             <img src="./images/mediumWave.svg" alt="волна">
             <span>95%</span>
-            Научились кататься            
+            Научились кататься
           </div>
-          <div class="expertise__info-item"> 
-            <img src="./images/largeWave.svg" alt="волна">           
+          <div class="expertise__info-item">
+            <img src="./images/largeWave.svg" alt="волна">
             <span>99%</span>
             Довольных клиентов
           </div>
@@ -230,6 +232,188 @@
       </div>
     </div>
   </section>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="title portfolio__title">ГАЛЕРЕЯ</h2>
+      <div class="portfolio__filter-btn">
+        <button class="portfolio__btn" data-filter="all">ВСЕ</button>
+        <button class="portfolio__btn" data-filter=".category-a">ТУРИСТЫ</button>
+        <button class="portfolio__btn" data-filter=".category-b">ПРИРОДА</button>
+        <button class="portfolio__btn" data-filter=".category-c">ПРОФИ</button>
+      </div>
+      <div class="portfolio__content-img">
+        <div class="portfolio__item portfolio__item-img1 mix category-a">
+          <img class="" src="images/portfolio/1.jpg" alt="portfolio images">
+          <a class="portfolio__item-link" href="#"></a>
+        </div>
+        <div class="portfolio__item mix category-a">
+          <img src="images/portfolio/2.jpg" alt="portfolio images">
+          <a class="portfolio__item-link" href="#"></a>
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="images/portfolio/3.jpg" alt="portfolio images">
+          <a class="portfolio__item-link" href="#"></a>
+        </div>
+        <div class="portfolio__item mix category-b">
+          <img src="images/portfolio/4.jpg" alt="portfolio images">
+          <a class="portfolio__item-link" href="#"></a>
+        </div>
+        <div class="portfolio__item mix category-c">
+          <img src="images/portfolio/5.jpg" alt="portfolio images">
+          <a class="portfolio__item-link" href="#"></a>
+        </div>
+        <div class="portfolio__item portfolio__item-img6 mix category-c">
+          <img src="images/portfolio/6.jpg" alt="portfolio images">
+          <a class="portfolio__item-link" href="#"></a>
+        </div>
+      </div>
+      <a class="portfolio__add" href="#">
+        <button class="portfolio__add-btn">ПОКАЗАТЬ ЕЩЕ</button>
+      </a>
+    </div>
+    <blockquote class="blockquote">
+      <p>«Если сомневаешься – иди катайся.»</p>
+      <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
+    </blockquote>
+    <div class="container">
+      <div class="portfolio__video">
+        <a data-fancybox class="portfolio__video-link" href="https://youtu.be/26KzUnEbTUs?si=kSfYjCiVuZBgib_u">
+          <img src="./images/play.svg" alt="play icon">
+        </a>
+      </div>
+      <div class="portfolio__numbers">
+        <h5 class="portfolio__numbers-item">
+          450
+          <span>туристов</span>
+        </h5>
+        <h5 class="portfolio__numbers-item">
+          2500
+          <span>часов катания</span>
+        </h5>
+        <h5 class="portfolio__numbers-item">
+          10
+          <span>проф. тренеров</span>
+        </h5>
+        <h5 class="portfolio__numbers-item">
+          365
+          <span>дней в году</span>
+        </h5>
+      </div>
+    </div>
+  </section>
+  <section class="slider-blog">
+    <div class="container">
+      <h2 class="title slider-blog__title">БЛОГ</h2>
+    </div>
+    <div class="slider-blog__bg">
+      <div class="container">
+        <div class="slider-blog__inner">
+
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+          <div class="slider-blog__item">
+            <a class="slider-blog__item-link" href="#">
+              <h3 class="slider-blog__item-title">
+                ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР
+              </h3>
+            </a>
+            <p class="slider-blog__item-desc">
+              ТОП 20 необходимых вещей для комфортного отдыха и обучения
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -238,6 +422,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
