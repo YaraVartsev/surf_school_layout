@@ -530,5 +530,59 @@ portfolio__item-link {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 18px;
 }
+
+.pricing {
+  padding: 200px 0 200px;
+  background-color: #f8f8f8;
+}
+
+.pricing__title {
+  text-align: center;
+  margin-bottom: 183px;
+}
+
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.pricing__item {
+  text-align: start;
+  padding: 45px 31px;
+  background-color: #fff;
+  width: 360px;
+}
+
+.pricing__item-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353e;
+  text-align: center;
+  padding-bottom: 58px;
+}
+
+.pricing__items li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
+  margin-bottom: 20px;
+}
+
+.pricing__items .pricing__item .first {
+  margin-top: 155px;
+}
+
+li.pricing__item-num {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353e;
+  margin-top: 61px;
+  text-align: center;
+}
+
