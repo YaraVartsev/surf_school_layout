@@ -683,3 +683,13 @@ li.pricing__item-num {
 .connection__inner-social a:hover{
   color:#00b2a0
 }
+
+.footer{
+  padding: 68px 0;
+  background-color: #00b2a0;
+}
+
+.footer__logo{
+  text-align: center;
+  margin: auto;
+}
