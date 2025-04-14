@@ -648,22 +648,26 @@ li.pricing__item-num {
   cursor: pointer;
 }
 
-.connection__inner .connection__inner-adres {
-  text-align: start;
-  padding: 49px 0 6px 52px;
+.footer__contact {
   margin-left: 31px;
+  text-align: start;
+  padding: 49px 230px 6px 52px;
   background-color: #f8f8f8;
   width: 600px;
-  display: flex;
-  flex-direction: column;
-}
-
-.connection__inner-adres li {
-  margin-bottom: 65px;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.6px;
+  color: #242121;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact-list{
+  margin-bottom: 65px;
+}
+
+.footer__contact-list a{
   color: #242121;
 }
 
@@ -680,16 +684,16 @@ li.pricing__item-num {
   color: #242121;
 }
 
-.connection__inner-social a:hover{
-  color:#00b2a0
+.connection__inner-social a:hover {
+  color: #00b2a0
 }
 
-.footer{
+.footer {
   padding: 68px 0;
   background-color: #00b2a0;
 }
 
-.footer__logo{
+.footer__logo {
   text-align: center;
   margin: auto;
 }
